@@ -1,12 +1,12 @@
 OBJ = main.o 
 INC = -I "./"
 
-Cpptracer: $(OBJ)
-	   g++ $(OBJ) -o Cpptracer.exe
+raytracer: $(OBJ)
+	   g++ $(OBJ) -o raytracer.exe
 	   rm -f $(OBJ)
 
 main.o:
 	   g++ -c main.cpp $(INC)
 
 clean: 
-	   rm -f $(OBJ) Cpptracer
+	   rm -f $(OBJ) raytracer
